@@ -367,6 +367,9 @@ public class GeneradorBoletosMvn extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GeneradorBoletosMvn());
-    }
+    SwingUtilities.invokeLater(() -> {
+        new GeneradorBoletosMvn(); // Esto lanza la ventana
+    });
+}
+
 }
